@@ -51,30 +51,45 @@
                 <input type="date" id="start" name="start">
               </div>
               <div class="input-wrapper flex-1">
-                <legend>fim</legend>
+                <legend>Fim</legend>
                 <input type="date" id="end" name="end">
               </div>
             </div>
 
             <div class="flex">
-              <div class="action-wrapper flex-1">
-                <legend>Tipo</legend>
-                <button type="button">Presencial</button>
-                <button type="button">Online</button>
+              
+              <div class="radio-wrapper flex-1">
+                
+                <legend>Tipo</legend> 
+                <div class="radio-options">
+                  <div class="radio-inner">
+                    <input type="radio" name="localtype" id="presencial" value="presencial">
+                    <img src="./assets/icons/building-2.svg" alt="">
+                    <label for="presencial">Presencial</label>
+                  </div>
+                  <div class="radio-inner">
+                    <input type="radio" name="localtype" id="online" value="online">
+                    <img src="./assets/icons/video.svg" alt="">
+                    <label for="online">Online</label>
+                  </div>
+                </div>
               </div>
+
               <div class="input-wrapper flex-1">
                 <legend>Local</legend>
                 <input type="text" id="adress" name="adress" placeholder="Link ou endereço">
               </div>
-            </div>
+              </div>
+
 
             <div class="textarea-wrapper">
-                <label for="description">Descrição</label>
+                <legend>Descrição</legend>
+                <label for="description"></label>
                 <textarea name="description" id="description"
                   cols="30" rows="5"
                   placeholder="Escreva sobre os detalhes do evento"
                 ></textarea>
-              </div>
+            </div>
 
           </fieldset>
 

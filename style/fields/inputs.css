@@ -1,4 +1,4 @@
-input, textarea, select {
+input:not(radio-inner), textarea, select {
   appearance: none;
   background-color: var(--input-base);
   width: 100%;
@@ -10,11 +10,16 @@ input, textarea, select {
   font: var(--body-mid);
 
 }
-label {
+
+input[type="date"] {
+  position: relative;
+  color: var(--input-placeholder);
   font: var(--body-mid);
-  color: var(--text-body);
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+}
 
-  display: block;
-  margin-bottom: .75rem;
-
+.input-wrapper {
+  padding-block: 0.65625rem;
 }
