@@ -35,9 +35,6 @@ aside {
     color: var(--text-heading);
     margin-top: 1rem;
   }
-
-
-
 }
 
 main {
@@ -46,4 +43,34 @@ main {
   margin-right: 1.25rem;
   border-radius: 0.75rem;
   padding: 5rem 8.125rem;
+  overflow: auto;
+  
+  & h1 {
+    font: var(--heading-mid);
+    color: var(--text-heading);
+    margin-bottom: 2.5rem;
+  }
+
+   & .main-container  {
+    max-width: 35rem;
+    margin-left: auto;
+  }
+
+
+
+
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font: var(--heading-sm);
+  color: var(--text-heading);
+
+  & svg path {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: var(--input-placeholder);
+  }
 }
