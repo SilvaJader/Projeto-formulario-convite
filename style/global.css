@@ -56,7 +56,6 @@
 }
 
 body {
-  font: var(--logo);
   color: var(--brand-dark);
-
+  background-color: rgb(15,15,15);
 }
