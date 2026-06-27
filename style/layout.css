@@ -91,32 +91,3 @@ main {
   }
 }
 
-.color-options {
-  padding-top: 1rem;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
- }
-
-.color-options input[type="radio"] {
-  display: none;
-}
-
-.color-picker {
-  width: 100%;
-}
-
-.color-options label {
-  width: 1.75rem;
-  height: 1.75rem;
-  border-radius: 50%;
-  background-color: var(--color);
-  cursor:pointer;
-  border: 3px solid transparent;
-  outline: 3px solid transparent;
-}
-
-.color-options input[type="radio"]:checked + label {
-  outline: 2px solid var(--color);
-  outline-offset: 3px;
-}

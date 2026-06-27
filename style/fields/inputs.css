@@ -38,7 +38,7 @@ input:focus,
 select:focus,
 textarea:focus,
 input[type="date"]:focus-within {
-  outline: .25rem solid var(--brand-light);
+  outline: .1rem solid var(--brand-light);
   border-color: var(--stroke-highlight);
   color: var(-text-body);
 }

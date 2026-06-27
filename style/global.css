@@ -72,3 +72,7 @@ body {
   
 }
 
+label {
+  font: var(--body-sm);
+  color: var(--text-heading);
+}

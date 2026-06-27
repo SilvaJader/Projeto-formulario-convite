@@ -51,9 +51,89 @@
     }
 
   }
+}
+
+.color-options {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+ }
+
+.color-options input[type="radio"] {
+  display: none;
+}
+
+.color-picker {
+  width: 100%;
+}
+
+.color-options label {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: var(--color);
+  cursor:pointer;
+  border: 3px solid transparent;
+  outline: 3px solid transparent;
+}
 
 
+.color-options input[type="radio"]:checked + label {
+  outline: 2px solid var(--color);
+  outline-offset: 3px;
+}
 
+.cards #theme {
+  margin-top: 1.75rem;
+}
 
+.themes-options {
+  margin-top: 1.75rem;
+  display: grid;
+  grid-template-columns: repeat(4, 134px);
+  gap: 0.5rem;
 
+  & input {
+    display: none;
+    position: relative;
+  }
+
+  & label {
+    width: 134px;
+    height: 103px;
+    background-color: var(--shape-button);
+    border: 3px solid transparent;
+    outline: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  & label .card-image {
+    width: 126px;
+    height: 64px;
+    overflow: hidden;
+    border-radius: 0.25rem;
+
+    & img {
+    width: 134px;
+    height: 64px;
+    object-fit: contain;
+    background-position: center;
+        
+    }
+  }
+  
+  & label .card-title {
+    margin-block: 0.5rem;
+    align-self: center
+
+  }
+    
+  & input[type="radio"]:checked + label {
+  outline: 2px solid var(--brand-light);
+  outline-offset: 2px;
+}
 }
