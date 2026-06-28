@@ -30,7 +30,6 @@
   & input:hover {
     all:unset;
     position: absolute;
-    inset: 0;
   }
 
   svg path {

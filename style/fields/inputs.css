@@ -10,6 +10,47 @@ input:not(radio-inner), textarea, select {
   font: var(--body-mid);
   color: var(--text-body);
 
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+
+    font: var(--text-xs);
+    color: red;
+
+    margin-top: .25rem;
+  }
+
+  &[required]:invalid:not(:focus) {
+    border: 1px solid red;
+  }
+
+  &:valid {
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+}
+
+  &[required]:valid + .error {
+    display: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 input[type="date"] {

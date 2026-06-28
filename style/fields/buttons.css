@@ -1,0 +1,62 @@
+
+button {
+  all:unset;
+  flex: 1;
+  width: 4rem;
+  height: 2rem;
+
+ 
+
+  background-image: url(../../assets/buttons/escuro.svg);
+  object-fit: cover;
+
+}
+
+.action {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  gap: 2rem;
+}
+
+#style {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-items: center;
+
+}
+
+.img-button {
+  display: flex;            /* alinha button e span na HORIZONTAL */
+  align-items: center;      /* centraliza verticalmente */
+  gap: 0.5rem;              /* espaço entre button e span */
+}
+
+.dropzone {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--input-base);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none; /* esconde o input nativo, o label faz o clique */
+}
+
+span #file {
+    white-space: nowrap;
+    font: var(--body-sm);
+    color: var(--text-body);
+}

@@ -20,6 +20,7 @@
   --green: #59FF91;
   --cyan: #59FFF9;
   --navy: #6A59FF;
+  
 
   --danger:#FF5959;
 
@@ -75,4 +76,10 @@ body {
 label {
   font: var(--body-sm);
   color: var(--text-heading);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--input-stroke);
+  margin: 4rem 0;
 }
